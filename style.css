@@ -70,7 +70,7 @@ nav li a{
 .main-bild{
     width: 100vw;
     height: 100vh;
-    background-image: url(/Src/images/bar-406884_1920.jpg);
+    background-image: url(./Src/images/bar-406884_1920.jpg);
     background-size: contain cover;
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ nav li a{
 }
 
 .second-bild{
-    background-image: url(/Src/images/food-3425223_1920.jpg);
+    background-image: url(./Src/images/food-3425223_1920.jpg);
     background: cover center;
     position: sticky;
     top: 0;
