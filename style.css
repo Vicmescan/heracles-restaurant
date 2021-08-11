@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root{
+    --primary: #15632f;
+    --secundary:#865439;
+    --tertiary:#C68B59;
+    --quaternary:#dadada;
+}
+
+body{
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* ----------------------header--------------------------------- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    width: 99vw;
+    z-index: 3;
+}
+
+nav img{
+    height: 75px;
+    margin: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    border-bottom: solid var(--quaternary) 5px;
+    margin-right: 4rem;
+}
+
+
+nav li a{
+    font-size: 3rem;
+    margin-right: 4rem;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow:black 2px 2px 5px;
+    color: var(--quaternary);
+}
+
+/* nav for menu.index */
+
+.nav-menu {
+    background-image: url(./Src/images/brick-3671612_1920.jpg);
+    height: 10vh;
+}
+
+/* -----------------------------main---------------------------- */
+
+
+.main-bild{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/Src/images/bar-406884_1920.jpg);
+    background-size: contain cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bild h1{
+    font-size: 8rem;
+    color: var(--quaternary);
+    text-shadow:black 2px 2px 5px;
+}
+
+.open-time{
+    font-size: 3rem;
+    color: var(--quaternary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Src/images/cook-2364221_1920.jpg);
+    text-shadow: black 2px 2px 2px;
+}
+
+.second-bild{
+    background-image: url(/Src/images/food-3425223_1920.jpg);
+    background: cover center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -3;
+   
+}
+
+.concept {
+    color: var(--quaternary);
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: black 2px 2px 5px;
+    margin-bottom: 60vh;
+}
+.concept article {
+    width: 50%;
+}
+
+.quote{
+    color: var(--quaternary);
+    text-shadow: black 2px 2px 5px;
+    font-size: 5rem;
+    text-align: center;  
+}
+
+.space {
+    height: 45vh;
+}
+
+/* main of menu.index */
+
+.main-bild-menu {
+    background: url(./Src/images/black-1072366_1920.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+
+.menu {
+    font-size: 2.5rem;
+    color: var(--quaternary); 
+    text-shadow:black 2px 2px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.menu article {
+    margin: 2rem;
+    margin-top: 15vh;
+}
+
+/* main of gallery.index */
+
+.main-bild-gallery {
+    background: url(./Src/images/album-2974646_1920.jpg);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+}
+
+.photos img {
+    width: 20vw;
+    height: 40vh;
+    border: var(--quaternary) solid 5px;
+    border-radius: 7%;
+    margin-top: 20vh;
+    box-shadow: black 10px 10px 10px;
+    display: inline-block
+}
+
+.space2 {
+    height: 10vh;
+}
+
+.photos img:hover {
+    border: black solid 5px;
+    cursor: pointer;
+}
+
+.photos img:active {
+    transform: scale(1.5);
+    transition: transform 0.2s linear;
+    box-shadow: none;
+}
+
+/* main for contact.html */
+
+
+.contact-main {
+    background: url(./Src/images/mailbox-1819966_1920.jpg) center;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+}
+
+.info {
+    font-size: 2.5rem;
+    color: var(--quaternary);
+    text-shadow:black 2px 2px 5px;
+    width: 30%;
+    margin: 8%;
+    background-image: url(./Src/images/black-1072366_1920.jpg);
+    text-align: center;
+    border: 10px solid;
+    
+    border-image-width: 3;
+    border-image-source: url(./Src/images/wood-2045380_1920.jpg);
+    border-image-slice:20%;
+    border-image-repeat: round;
+}
+
+
+
+/* -----------------------------------Footer--------------------------- */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--quaternary);
+    background-image: url(./Src/images/cook-2364221_1920.jpg);
+    font-size: 3rem;
+    text-shadow:black 2px 2px 5px;
+    width: 100vw;
+    position: relative;
+}
+
+footer a {
+    margin-right: 4rem;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow:black 2px 2px 5px;
+    color: var(--quaternary);
+}
+
+/* footer for menu.index */
+
+.menu-footer {
+    background-image: url(./Src/images/brick-3671612_1920.jpg);
+    height: 10vh;
+}
+
+/* footer gallery.html */
+
+.gallery-footer {
+    background: none;
+}
+
+/* footer contact.html */
+
+.contact-footer {
+    position: fixed;
+    bottom: 0;
+    background: none;
+}
+
+
+/* --------------------------Media Query---------------------------------------- */
+
+
+/* For mobile Phone */
+
+@media only screen and (max-width: 667px) {
+    
+/* Home */
+
+    header nav {
+        display: inline;
+    }
+
+    header nav img {
+        display: none;
+    }
+
+    header nav ul {
+        width: 80vw;
+        justify-content: space-between;
+    }
+    
+    header nav ul a {
+        font-size: 2rem;
+        margin: 0rem;
+    }
+    
+    .main-bild {
+        height: 70vh;
+        background-size: cover;
+    }
+    .main-bild h1 {
+        font-size: 3rem;
+    }
+
+    .open-time {
+        font-size: 2rem;
+    }
+
+    .open-time h2 {
+        display: none;
+    }
+
+    .second-bild {
+        background-size: cover;  
+       }
+
+    .concept{
+        flex-direction: column;
+        font-size: 2.5rem;
+        padding: 4rem;
+    }
+    .concept article {
+        width: 90vw;
+        text-align: justify;
+        margin-bottom: 5rem;
+    }
+
+    .concept aside {
+        font-size: 3.5rem;
+    }
+
+    .quote {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+
+   footer a {
+       text-align: end;
+   }
+      
+/* Menu */
+
+   .nav-menu {
+       height: 16vh;
+   }
+
+   .menu {
+       display: flex;
+       flex-direction: column;
+       font-size: 2rem;
+   }
+
+   .menu article {
+       margin-top: 5vh;
+    }
+    
+    .menu article h5 {
+       text-align: justify;
+   }
+
+/* Gallery */
+
+   .photos {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    
+    .photos img {
+       width: 28vw;
+       height: 50vh;
+       margin-top: 20vh;
+   }
+/* Contact */
+
+   .contact-main {
+       flex-direction: column;
+   }
+
+   .info {
+       font-size: 1.5rem;
+       width: 80vw;
+       height: 60vh;
+       align-items: center;
+       justify-content: center;
+       margin-top: 5rem;
+       
+   }
+   .blackboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -3rem;
+    margin-left: 2rem;
+    justify-content: space-around;
+   }
+}
+
+/* Inclined mobiles */
+
+@media only screen and (max-width: 600px) {
+
+    .main-bild {
+        height: 84vh;
+    }
+
+    .nav-menu {
+        height: 9vh;
+    }
+
+    .photos img {
+        width: 35vw;
+        height: 35vh;
+        margin-top: 12vh;
+    }
+}
