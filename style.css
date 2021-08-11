@@ -31,7 +31,7 @@ nav{
     justify-content: space-between;
     background-color: transparent;
     position: fixed;
-    width: 99vw;
+    width: 100vw;
     z-index: 3;
 }
 
@@ -66,12 +66,11 @@ nav li a{
 
 /* -----------------------------main---------------------------- */
 
-
 .main-bild{
     width: 100vw;
     height: 100vh;
     background-image: url(./Src/images/bar-406884_1920.jpg);
-    background-size: contain cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +95,7 @@ nav li a{
 
 .second-bild{
     background-image: url(./Src/images/food-3425223_1920.jpg);
-    background: cover center;
+    background-size: cover;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -112,6 +111,7 @@ nav li a{
     align-items: center;
     justify-content: space-around;
     text-shadow: black 2px 2px 5px;
+    margin-top: -20vh;
     margin-bottom: 60vh;
 }
 .concept article {
@@ -187,9 +187,6 @@ nav li a{
 .photos img:hover {
     border: black solid 5px;
     cursor: pointer;
-}
-
-.photos img:active {
     transform: scale(1.5);
     transition: transform 0.2s linear;
     box-shadow: none;
@@ -274,12 +271,12 @@ footer a {
 
 /* For mobile Phone */
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 800px) {
     
 /* Home */
 
     header nav {
-        display: inline;
+        width: 80vw;
     }
 
     header nav img {
@@ -287,13 +284,13 @@ footer a {
     }
 
     header nav ul {
-        width: 80vw;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-right: 0;
     }
     
     header nav ul a {
-        font-size: 2rem;
-        margin: 0rem;
+        font-size: 1.8rem;
+        margin-left:-2rem;
     }
     
     .main-bild {
@@ -320,15 +317,16 @@ footer a {
         flex-direction: column;
         font-size: 2.5rem;
         padding: 4rem;
+        margin-bottom: 35vh;
     }
     .concept article {
         width: 90vw;
-        text-align: justify;
         margin-bottom: 5rem;
     }
 
     .concept aside {
         font-size: 3.5rem;
+        
     }
 
     .quote {
